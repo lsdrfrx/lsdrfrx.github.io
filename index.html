@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Title</title>
-</head>
-<body>
-    Салам
-</body>
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.2/core.js" integrity="sha512-g8TodWNzrsxJkADtGuwwvVND2MVKUuisGWZsj2/NtLA/XFDq9biQpeDMcJ8iu71OpabLfDxfEAdTQFdXjmV60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <title>Title</title>
+    </head>
+
+    <body>
+        <header>
+            <script>
+                import Typewriter from 'typewriter-effect/dist/core';
+
+                new Typewriter('#typo', {
+                    strings: ['Hello', 'World'],
+                    autoStart: true,
+                });
+            </script>
+            <div class="header_element" id="typo"></div>
+            <div class="header_element">
+                image
+            </div>
+        </header>
+
+        <main>
+            Main
+        </main>
+
+        <footer>
+            Footer
+        </footer>
+    </body>
+
 </html>

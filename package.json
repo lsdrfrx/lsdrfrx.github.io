@@ -1,0 +1,7 @@
+{
+  "name": "lsdrfrx.github.io",
+  "version": "1.0.0",
+  "dependencies": {
+    "typewriter-effect": "^2.18.2"
+  }
+}
