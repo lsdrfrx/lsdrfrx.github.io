@@ -2,6 +2,7 @@
   "name": "lsdrfrx.github.io",
   "version": "1.0.0",
   "dependencies": {
+    "typed.js": "^2.0.12",
     "typewriter-effect": "^2.18.2"
   }
 }

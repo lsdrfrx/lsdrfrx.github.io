@@ -5,23 +5,33 @@
         <meta charset="UTF-8">
 
         <link rel="stylesheet" href="style.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.18.2/core.js" integrity="sha512-g8TodWNzrsxJkADtGuwwvVND2MVKUuisGWZsj2/NtLA/XFDq9biQpeDMcJ8iu71OpabLfDxfEAdTQFdXjmV60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
         <title>Title</title>
     </head>
 
     <body>
         <header>
-            <script>
-                import Typewriter from 'typewriter-effect/dist/core';
+            <div class="header__element typing__block">
+                <span id="typo"></span>
+            </div>
 
-                new Typewriter('#typo', {
-                    strings: ['Hello', 'World'],
-                    autoStart: true,
-                });
+            <script>
+                var options = {
+                    strings: ['', 'My name is Guetnga Christian.', 'I\'m junior Golang backend developer.'],
+                    typeSpeed: 70,
+                    loop: true
+                };
+
+                var typed = new Typed('#typo', options);
             </script>
-            <div class="header_element" id="typo"></div>
-            <div class="header_element">
+
+            <div class="header__element" id="image">
                 image
             </div>
         </header>

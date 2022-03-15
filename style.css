@@ -5,4 +5,28 @@ html, body {
 header {
     display: flex;
     justify-content: flex-start;
+    height: 100vh;
+}
+
+.typing__block {
+    position: absolute;
+    left: 15vw;
+    width: 33vw;
+}
+
+.header__element {
+    position: absolute;
+    top: 50%;
+}
+
+#typo {
+    position: relative;
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+
+#image {
+    position: absolute;
+    right: 30vw;
 }
