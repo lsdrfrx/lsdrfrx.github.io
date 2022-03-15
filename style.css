@@ -14,16 +14,24 @@ header {
     width: 33vw;
 }
 
-.header__element {
-    position: absolute;
-    top: 50%;
-}
-
 #typo {
     position: relative;
 
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
+}
+
+.typed-cursor{
+    font-size: 40px;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+.header__element {
+    position: absolute;
+    top: 50%;
 }
 
 #image {
