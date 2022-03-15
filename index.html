@@ -7,15 +7,22 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
         <title>Title</title>
     </head>
 
     <body>
+        <script>
+            AOS.init();
+        </script>
+
         <header>
             <div class="header__element typing__block">
                 <span id="typo"></span>
@@ -32,16 +39,69 @@
             </script>
 
             <div class="header__element" id="image">
-                image
+                <img src="header_image.png" alt="">
             </div>
         </header>
 
+        <div class="divider div__transparent"></div>
+
         <main>
-            Main
+            <div class="main__container">
+                <h1 data-aos="fade-left">About me</h1>
+                <div class="vol" data-aos="fade-left">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem dolorum maxime odio vel. Beatae deserunt doloribus ducimus enim fugiat illo, laudantium magnam nulla praesentium soluta temporibus, voluptas. Aliquid asperiores autem debitis dignissimos distinctio dolorem, eaque explicabo ipsam libero minus, nihil nisi non odio odit officia perspiciatis quidem veniam voluptatibus? Ab amet animi at debitis delectus deleniti dolore error et exercitationem facere fugiat ipsam ipsum iure, laudantium minus nulla odio perferendis quam quod saepe sunt suscipit temporibus voluptates. Ab amet aspernatur atque, deleniti deserunt ea eaque eius est eum facilis fugiat harum, impedit magnam maxime molestias nesciunt nisi nobis officia provident quam quisquam repellendus repudiandae suscipit, tenetur veritatis voluptates voluptatum! Ad animi aspernatur atque consectetur corporis culpa cum cumque debitis dolor doloremque eaque enim eos excepturi, harum in ipsa ipsum libero modi molestias neque pariatur perferendis praesentium, provident quasi reiciendis rem reprehenderit saepe tenetur unde voluptate! Ad culpa cupiditate, delectus, deserunt dignissimos distinctio dolor dolorum est eveniet expedita fuga hic illum molestias mollitia natus neque, nisi nobis non obcaecati pariatur possimus quae quasi quia quis quisquam recusandae tempore vel velit veniam vero vitae voluptatem voluptatibus voluptatum! Ad, animi, blanditiis consectetur distinctio fuga illo inventore iusto laudantium maxime, officia officiis provident voluptatem.</p>
+                    <img id="aboutme_img" src="https://pyxis.nymag.com/v1/imgs/aaa/8f9/78b221e037c988d4cc4275ae853425d965-01-shrek-nudes.rsquare.w330.jpg" alt="">
+                </div>
+
+                <h1 data-aos="fade-right">My skills</h1>
+                <div class="vol" data-aos="fade-right">
+                    <div class="skill">
+                        <img class="pic" src="skills/golang.png" rel="">
+                        <p>Golang</p>
+                    </div>
+
+                    <div class="skill">
+                        <img class="pic" src="skills/postgres.png" rel="">
+                        <p>PostgreSQL</p>
+                    </div>
+
+                    <div class="skill">
+                        <img class="pic" src="skills/mongo.png" rel="">
+                        <p>MongoDB</p>
+                    </div>
+
+                    <div class="skill">
+                        <img class="pic" src="skills/jwt.png" rel="">
+                        <p>JWT</p>
+                    </div>
+
+                    <div class="skill">
+                        <img class="pic" src="skills/git.png" rel="">
+                        <p>Git</p>
+                    </div>
+
+                    <div class="skill">
+                        <img class="pic" src="skills/docker.png" rel="">
+                        <p>Docker</p>
+                    </div>
+
+                    <div class="skill">
+                        <img class="pic" src="skills/rest.png" rel="">
+                        <p>REST API</p>
+                    </div>
+                </div>
+
+                <h1 data-aos="fade-left">My works</h1>
+                <div class="vol" data-aos="fade-left">
+                    It's empty now. There will be a lot of my products soon :)
+                </div>
+            </div>
         </main>
 
+        <div class="divider div__transparent"></div>
+
         <footer>
-            Footer
+            <a href="https://www.github.com/lsdrfrx">Click here to visit my github profile</a>
         </footer>
     </body>
 
