@@ -79,10 +79,36 @@ header {
     justify-content: space-around;
 }
 
-#aboutme_img {
-    border-radius: 500px;
-    padding-left: 40px;
+#picture {
+    border-radius: 300px;
+    margin-left: 40px;
+
+    height: 300px;
+    transition: height .7s ease-out 100ms;
+
+
 }
+
+#picture:hover {
+    height: 305px;
+}
+
+#shade {
+    display: block;
+
+    position: absolute;
+    top: 30px;
+    right: -30px;
+
+    width: 300px;
+    height: 300px;
+
+    border-radius: 300px;
+    background-color: #cbc2d5;
+
+    z-index: -1;
+}
+
 
 /* My skills */
 .skill {
