@@ -1,111 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-    <head>
-        <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab&display=swap" rel="stylesheet">        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>RESUME</title>
+  </head>
 
-        <title>RESUME</title>
-    </head>
+  <body>
+    <script>
+      AOS.init();
+    </script>
 
-    <body>
-        <script>
-            AOS.init();
-        </script>
+    <header>
+      <div class="header__element typing__block">
+        <span id="typo"></span>
+      </div>
 
-        <header>
-            <div class="header__element typing__block">
-                <span id="typo"></span>
-            </div>
+      <script>
+        var options = {
+          strings: [
+            "",
+            "Chris^100tian Gu^150etnga.",
+            "Asp^500iring No^100de.js backe^100nd d^100eveloper.",
+          ],
+          typeSpeed: 70,
+          loop: true,
+        };
 
-            <script>
-                var options = {
-                    strings: ['', 'My name is Guetnga Christian.', 'I\'m junior Golang backend developer.'],
-                    typeSpeed: 70,
-                    loop: true
-                };
+        var typed = new Typed("#typo", options);
+      </script>
 
-                var typed = new Typed('#typo', options);
-            </script>
+      <div class="header__element" id="image">
+        <img src="header_image.png" alt="" />
+      </div>
+    </header>
 
-            <div class="header__element" id="image">
-                <img src="header_image.png" alt="">
-            </div>
-        </header>
+    <div class="divider div__transparent"></div>
 
-        <div class="divider div__transparent"></div>
+    <main>
+      <div class="main__container">
+        <h1 data-aos="fade-left">About me</h1>
+        <div class="vol" data-aos="fade-left">
+          <p>
+            Hi! My name is Guetnga Christian. I'm 19 years old, a second-year
+            information security student in Tula State University.<br />
+            Self-taugth coder. I've started to code already 5 years ago.
+          </p>
+          <div id="aboutme__img">
+            <div id="shade"></div>
+            <img id="picture" src="aboutme_img.jpg" alt="" />
+          </div>
+        </div>
 
-        <main>
-            <div class="main__container">
-                <h1 data-aos="fade-left">About me</h1>
-                <div class="vol" data-aos="fade-left">
-                    <p>Hi! My name is Guetnga Christian. I'm 18 years old, a first-year information security student at Tula State University.<br>
-                        Self-taugth coder. I've started to code already 4 years ago.
-                    </p>
-                    <div id="aboutme__img">
-                        <div id="shade"></div>
-                        <img id="picture" src="aboutme_img.jpg" alt="">
-                    </div>
-                </div>
+        <h1 data-aos="fade-right">My skills</h1>
+        <div class="vol" data-aos="fade-right">
+          <div class="skill">
+            <img class="pic" src="skills/nestjs.svg" rel="" />
+            <p>NestJS</p>
+          </div>
 
-                <h1 data-aos="fade-right">My skills</h1>
-                <div class="vol" data-aos="fade-right">
-                    <div class="skill">
-                        <img class="pic" src="skills/golang_pic.png" rel="">
-                        <p>Golang</p>
-                    </div>
+          <div class="skill">
+            <img class="pic" src="skills/postgres.png" rel="" />
+            <p>PostgreSQL</p>
+          </div>
 
-                    <div class="skill">
-                        <img class="pic" src="skills/postgres.png" rel="">
-                        <p>PostgreSQL</p>
-                    </div>
+          <div class="skill">
+            <img class="pic" src="skills/mongo.png" rel="" />
+            <p>MongoDB</p>
+          </div>
 
-                    <div class="skill">
-                        <img class="pic" src="skills/mongo_pic.png" rel="">
-                        <p>MongoDB</p>
-                    </div>
+          <div class="skill">
+            <img class="pic" src="skills/git.png" rel="" />
+            <p>Git</p>
+          </div>
 
-                    <div class="skill">
-                        <img class="pic" src="skills/jwt.png" rel="">
-                        <p>JWT</p>
-                    </div>
+          <div class="skill">
+            <img class="pic" src="skills/docker.png" rel="" />
+            <p>Docker</p>
+          </div>
 
-                    <div class="skill">
-                        <img class="pic" src="skills/git_pic.png" rel="">
-                        <p>Git</p>
-                    </div>
+          <div class="skill">
+            <img class="pic" src="skills/graphql.png" rel="" />
+            <p>GraphQL</p>
+          </div>
 
-                    <div class="skill">
-                        <img class="pic" src="skills/docker_pic.png" rel="">
-                        <p>Docker</p>
-                    </div>
+          <div class="skill">
+            <img class="pic" src="skills/rest.png" rel="" />
+            <p>REST API</p>
+          </div>
+        </div>
 
-                    <div class="skill">
-                        <img class="pic" src="skills/rest.png" rel="">
-                        <p>REST API</p>
-                    </div>
-                </div>
+        <h1 data-aos="fade-left">My works</h1>
+        <div class="vol" data-aos="fade-left">
+          It's empty now. There will be a lot of my products soon :)
+        </div>
+      </div>
+    </main>
 
-                <h1 data-aos="fade-left">My works</h1>
-                <div class="vol" data-aos="fade-left">
-                    It's empty now. There will be a lot of my products soon :)
-                </div>
-            </div>
-        </main>
+    <div class="divider div__transparent"></div>
 
-        <div class="divider div__transparent"></div>
-
-        <footer>
-            <a href="https://www.github.com/lsdrfrx">Click here to visit my github profile</a>
-        </footer>
-    </body>
-
+    <footer>
+      <a href="https://www.github.com/lsdrfrx"
+        >Click here to visit my github profile</a
+      >
+    </footer>
+  </body>
 </html>
