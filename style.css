@@ -1,1 +1,162 @@
-html,body{margin:0;font-family:"Roboto Slab",serif}header{display:flex;justify-content:flex-start;height:100vh}.typing__block{position:absolute;left:15vw;width:33vw}#typo{position:relative;font-family:"Oswald",sans-serif;font-size:40px}.typed-cursor{font-size:40px;opacity:1;animation:blink .7s infinite}.header__element{position:absolute;top:50%}#image{position:absolute;right:5vw;top:0}#image img{height:95vh}.divider{position:relative;height:1px}.div__transparent:before{content:"";position:absolute;top:0;left:5%;right:5%;width:90%;height:1px;background-image:linear-gradient(to right, transparent, rgb(48, 49, 51), transparent)}.main__container{margin:40px 150px 40px 150px}.vol{margin:0 0 150px 0;display:flex;justify-content:space-around}#picture{border-radius:300px;margin-left:40px;height:300px;transition:height .5s ease-out 100ms}#picture:hover{height:310px}#shade{display:block;position:absolute;top:30px;right:-30px;width:300px;height:300px;border-radius:300px;background-color:#cbc2d5;z-index:-1}.skill{text-align:center}.skill:nth-last-child(1) .pic{opacity:60%}.pic{filter:grayscale(100%);transition:all ease .5s;height:100px}.pic:hover{filter:grayscale(0%);opacity:100% !important;height:110px}footer{text-align:center;margin:20px 0 50px 0}footer a{text-decoration:none}footer a:visited{color:#000}footer a:hover{color:#000;text-decoration:underline}footer a:link{color:#000}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+  background-color: #2E3440;
+  color: #d9d9d9;
+  position: relative;
+  /* overflow-y: hidden; */
+}
+
+main {
+  overflow-x: hidden;
+  /* overflow-y: auto; */
+  height: 100vh;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  border-bottom: 1px solid;
+}
+
+footer {
+  border-top: 1px solid;
+  bottom: 0;
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+header, footer {
+  position: absolute;
+  width: 100%;
+  border-color: #4C566A;
+  height: 64px;
+  line-height: 64px;
+  background-color: #2E3440;
+}
+
+.cell {
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.border_right {
+  border-right: 1px solid #4C566A;
+}
+
+#telegram, #github {
+  line-height: 32px;
+  padding-top: 16px;
+  color: red;
+}
+
+pre {
+  margin: 0;
+}
+
+section {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  padding: 64px 80px;
+  position: relative;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.command_line {
+  display: flex-box;
+  width: 500px;
+  font-size: 36px;
+}
+
+#aboutme_floating_cmd {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 175px);
+  transition: all 1.5s ease-in-out;
+}
+
+#about_me_clear {
+  position: absolute;
+  bottom: 148px;
+  left: 80px;
+} 
+
+.about_me_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.about_me_images {
+  width: 400px;
+  height: 100%;
+  position: relative;
+  top: 0;
+}
+
+.about_me_images img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.font_large {
+  font-size: 36px;
+}
+
+.font_medium {
+  font-size: 24px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.disabled {
+  display: none;
+}
+
+.unscrollable {
+  overflow-y: hidden;
+}
+
+.green {
+  color: #A3BE8C;
+}
+
+.blue {
+  color: #88C0D0;
+}
+
+.red {
+  color: #BF616A;
+}
+
+.orange {
+  color: #D08770;
+}
+
+.yellow {
+  color: #EBCB8B;
+}
+
+.purple {
+  color: #B48EAD;
+}
+
+.gray {
+  color: #4C566A;
+}

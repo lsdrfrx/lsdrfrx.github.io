@@ -6,121 +6,87 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+      
     <title>RESUME</title>
   </head>
-
+  
   <body>
-    <script>
-      AOS.init();
-    </script>
-
-    <header>
-      <div class="header__element typing__block">
-        <span id="typo"></span>
-      </div>
-
-      <script>
-        var options = {
-          strings: [
-            "",
-            "Chris^100tian Gu^150etnga.",
-            "Asp^500iring No^100de.js backe^100nd d^100eveloper.",
-          ],
-          typeSpeed: 70,
-          loop: true,
-        };
-
-        var typed = new Typed("#typo", options);
-      </script>
-
-      <div class="header__element" id="image">
-        <img src="header_image.png" alt="" />
-      </div>
+    <header class="font_medium hidden">
+      <div class="cell">
+        <span class="green">lsdrfrx@pc </span>
+        <span class="blue">/home/lsdrfrx/resume/</span><span id="active_file"></span>
+      </div> 
     </header>
-
-    <div class="divider div__transparent"></div>
-
-    <main>
-      <div class="main__container">
-        <h1 data-aos="fade-left">About me</h1>
-        <div class="vol" data-aos="fade-left">
-          <p>
-            Hi! My name is Guetnga Christian. I'm 19 years old, a second-year
-            information security student in Tula State University.<br />
-            Self-taugth coder. I've started to code already 5 years ago.
-          </p>
-          <div id="aboutme__img">
-            <div id="shade"></div>
-            <img id="picture" src="aboutme_img.jpg" alt="" />
+    <main class="unscrollable" id="scroll_container">
+      <section class="font_large centered" id="fetch_process">
+        <div class="container">
+          <div class="command_line">
+            $ <span id="fetch"></span> 
+          </div>
+          <p class="hidden" id="debug_log"><span class="orange">[DEBUG]</span> Fetching process started <span id="loader">/</span></p>
+          <pre class="hidden"><span class="green"  data-log-line="0">[INFO]</span>  Surname: Christian Guetnga</pre>
+          <pre class="hidden"><span class="green"  data-log-line="1">[INFO]</span>  Age:     19.75</pre>
+          <pre class="hidden"><span class="green"  data-log-line="2">[INFO]</span>  Height:  5.9ft</pre>
+          <pre class="hidden"><span class="green"  data-log-line="3">[INFO]</span>  Weight:  161lbs</pre>
+          <pre class="hidden"><span class="yellow" data-log-line="4">[WARN]</span>  Country: Russia</pre>
+          <pre class="hidden"><span class="green"  data-log-line="5">[INFO]</span>  Role:    Fullstack</pre>
+          <pre class="hidden"><span class="red"    data-log-line="6">[ERROR]</span> Job:     Idle</pre>
+          <span class="red hidden" id="return_status">return with code -1</span><br/><br/>
+          <div class="command_line hidden">
+            $ <span id="clear"></span>
           </div>
         </div>
-
-        <h1 data-aos="fade-right">My skills</h1>
-        <div class="vol" data-aos="fade-right">
-          <div class="skill">
-            <img class="pic" src="skills/nestjs.svg" rel="" />
-            <p>NestJS</p>
+      </section>
+      <section class="font_large centered" id="about_me">
+        <div class="command_line" id="aboutme_floating_cmd">
+          $ <span id="ranger"></span>
+        </div>
+        <div class="about_me_container hidden">
+          <div class="font_large">
+            <pre class="hidden"><span class="gray">1</span>   My name is Christian Guetnga, I’m a second-year</pre>
+            <pre class="hidden"><span class="gray">2</span>   information security student in Tula State University.</pre>
+            <pre class="hidden"><span class="gray">3</span>   Self-taugth coder. I started my development journey</pre>
+            <pre class="hidden"><span class="gray">4</span>   5 years ago, but I've been into web-development only</pre>
+            <pre class="hidden"><span class="gray">5</span>   for 2 years.</pre>
+            <pre class="hidden"><span class="gray">6</span>   I like to solve non-standard problems and learn new</pre>
+            <pre class="hidden"><span class="gray">7</span>   unusual technologies.</pre>
+            <pre class="hidden"><span class="gray">8</span>   I have some experience in commercial development,</pre>
+            <pre class="hidden"><span class="gray">9</span>   as well as participation in 3 hackathons in which our</pre>
+            <pre class="hidden"><span class="gray">10</span>  team took quite good positions.</pre>
           </div>
-
-          <div class="skill">
-            <img class="pic" src="skills/postgres.png" rel="" />
-            <p>PostgreSQL</p>
-          </div>
-
-          <div class="skill">
-            <img class="pic" src="skills/mongo.png" rel="" />
-            <p>MongoDB</p>
-          </div>
-
-          <div class="skill">
-            <img class="pic" src="skills/git.png" rel="" />
-            <p>Git</p>
-          </div>
-
-          <div class="skill">
-            <img class="pic" src="skills/docker.png" rel="" />
-            <p>Docker</p>
-          </div>
-
-          <div class="skill">
-            <img class="pic" src="skills/graphql.png" rel="" />
-            <p>GraphQL</p>
-          </div>
-
-          <div class="skill">
-            <img class="pic" src="skills/rest.png" rel="" />
-            <p>REST API</p>
+          <div class="about_me_images">
+            <img src="img/me 5.png" alt="">
+            <img src="img/me 4.png" alt="">
+            <img src="img/me 3.png" alt="">
+            <img src="img/me 2.png" alt="">
+            <img src="img/me 1.png" alt="">
           </div>
         </div>
-
-        <h1 data-aos="fade-left">My works</h1>
-        <div class="vol" data-aos="fade-left">
-          It's empty now. There will be a lot of my products soon :)
+        <div class="command_line hidden" id="about_me_clear">
+          $ <span id="aboutme_clear"></span>
         </div>
-      </div>
+      </section>
     </main>
-
-    <div class="divider div__transparent"></div>
-
-    <footer>
-      <a href="https://www.github.com/lsdrfrx"
-        >Click here to visit my github profile</a
-      >
+    <footer class="font_medium hidden">
+      <div class="cell border_right">
+        Contact me
+      </div>
+      <div class="cell border_right" id="telegram">
+        <a href="https://t.me/lsxdr">
+          <img src="telegram.png" alt="Me at Telegram">
+        </a>
+      </div>
+      <div class="cell border_right" id="github">
+        <a href="https://github.com/lsdrfrx">
+          <img src="github.png" alt="Me at Github">
+        </a>
+      </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" integrity="sha512-A64Nik4Ql7/W/PJk2RNOmVyC/Chobn5TY08CiKEX50Sdw+33WTOpPJ/63bfWPl0hxiRv1trPs5prKO8CpA7VNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
   </body>
 </html>
